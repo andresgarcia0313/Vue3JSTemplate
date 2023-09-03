@@ -1,0 +1,19 @@
+version: '3.9'
+services:
+  web:
+    build:
+      context: ./web
+      dockerfile: Containerfile
+    ports:
+      - "${PUERTO}:5173"
+    container_name: web
+    environment:
+      NODE_ENV: ${NODE_ENV}
+    volumes:
+      - ./web/app:/app
+    command: ["npm", "start"]
+    restart: unless-stopped
+    networks:
+      - net
+networks:
+  net:

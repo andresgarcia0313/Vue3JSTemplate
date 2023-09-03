@@ -1,0 +1,12 @@
+{
+  "recommendations": [
+    "mubaidr.vuejs-extension-pack",
+    "octref.vetur",
+    "dariofuzinato.vue-peek",
+    "sdras.vue-vscode-snippets",
+    "Vue.volar",
+    "Vue.vscode-typescript-vue-plugin",
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode"
+  ]
+}
